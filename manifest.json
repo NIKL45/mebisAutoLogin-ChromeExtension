@@ -1,0 +1,28 @@
+{
+   "author": "Niklas Weidner",
+   "background": {
+      "persistent": false,
+      "scripts": [ "backgroundEvents.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "description": "Diese Erweiterung loggt dich automatisch in mebis ein, sobald du https://lernplattform.mebis.bayern.de/ besuchst.",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "256": "icon.png",
+      "48": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoXZzetyVO5x5QV2L5+hcPOypferj94k9QwcmK+4wPJ0sSWTxyiDsuScJBTyHb4Z8XY6oeTLty3O7r1Vm7MbDBkFpQiRY5ymycwfucaV6fAAlw24trLng6IB/ii54Fh6pC9dLpNNfYF1POcqURIKsKOH18JbWswZ6Xpu8iQv/h6bM4NooSyv/J89eMlqbkJ5Ge3S7GUryuFyAYOJv5s5v3xJ9tu6pOlqw29xEoQVx1fBkjb2cyAucdkCHXbjnY+hM08PCTTShsS7tHm1QQOmFhB6zW9RjO4a/lQpEwtlyuS7w9zhLmsAl1BVknJLb2fhZy/+Vfkrv23ZIpkPOsTtnXwIDAQAB",
+   "manifest_version": 2,
+   "name": "mebis Auto Login",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "activeTab", "tabs", "storage", "https://lernplattform.mebis.bayern.de/", "https://idp.mebis.bayern.de/idp/profile/SAML2/Redirect/SSO?execution=e2s1" ],
+   "short_name": "mebis Auto Login",
+   "version": "0.0.6"
+}

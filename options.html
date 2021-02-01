@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mebis Auto Login Optionen</title>
+        <style>
+            body{
+                padding: 10px; 
+            }
+            label{
+                text-align: right;               
+            }           
+            #status{
+                background-color: #66ff66;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <table>
+            <tr>
+                <td><label>Benutzername:</label></td>
+                <td><input type="text" id="u_name"></td>
+            </tr>
+            <tr>
+                <td><label>Passwort:</label></td>
+                <td><input type="password" id="p_word"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="auto_log">
+                    <label></label>
+                    <label>Auto Login aktivieren</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td ><button id="save">Speichern</button></td>
+                <td> <div id="status"></div></td>
+            </tr>
+
+        </table>
+
+        <script src="options.js"></script> 
+    </body>
+</html>
