@@ -1,6 +1,6 @@
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 
-    if (changeInfo.status === "complete" && changeInfo.url === undefined && tab.url === "https://idp.mebis.bayern.de/idp/profile/SAML2/Redirect/SSO?execution=e2s1")
+    if (changeInfo.status === "complete" && changeInfo.url === undefined && tab.url.includes('https://idp.mebis.bayern.de/idp/profile/SAML2/Redirect/SSO'))
     {
         var username = '';
         var password = '';
